@@ -26,7 +26,7 @@ pSelection.forEach(function (pil) {
 
 		// Change COM Image
 		const imageC = document.querySelector(".comOption li img");
-		imageC.setAttribute("src", "/assets/" + pilihanCom + ".png");
+		imageC.setAttribute("src", "assets/" + pilihanCom + ".png");
 
 		// Hasil Winner
 		const info = document.querySelector(".info");
