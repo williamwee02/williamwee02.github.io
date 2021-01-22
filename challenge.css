@@ -1,0 +1,159 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Title */
+.intro {
+	background-color: #9c835f;
+	height: 15vh;
+}
+
+.intro h1 {
+	color: #f0b267;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	padding: 2em;
+	text-align: center;
+}
+
+.title {
+	background-color: #9c835f;
+	height: 5vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+/* Games */
+section {
+	height: 50vh;
+	background-color: #9c835f;
+	font-family: sans-serif;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+li {
+	list-style: none;
+	margin-top: 2em;
+}
+
+img {
+	width: 80px;
+	height: 80px;
+	cursor: pointer;
+}
+
+img:hover {
+	background: white;
+	opacity: 0.6;
+	border-radius: 10px;
+	padding: 15px;
+	transform: scale(1.5);
+}
+
+img:active {
+	background: white;
+	opacity: 0.6;
+	border-radius: 10px;
+	padding: 15px;
+	transform: scale(1.5);
+}
+
+.tooltip {
+	position: relative;
+	display: flex;
+	border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 1;
+	top: 5px;
+	right: 130%;
+}
+
+.tooltip .tooltiptext::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 100%;
+	margin-top: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent transparent transparent black;
+}
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+}
+
+/* Hasil Winner  */
+.info {
+	width: 150px;
+	height: 80px;
+	border: 5px solid #fabb31;
+	position: absolute;
+	top: 40%;
+	left: 45%;
+	background-color: white;
+	border-radius: 10px;
+	z-index: 1;
+	text-align: center;
+	color: #f0b267;
+	font-size: 20px;
+	line-height: 70px;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+/* Refresh Page*/
+#reset {
+	background-color: #9c835f;
+	height: 10vh;
+}
+
+#reset img {
+	margin-left: 50%;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+}
+
+#reset img:hover {
+	background: white;
+	opacity: 0.6;
+	border-radius: 10px;
+	padding: 10px;
+	transform: scale(1.8);
+}
+
+/* Modal Content */
+.rules {
+	background-color: #9c835f;
+	height: 10vh;
+}
+.rules button {
+	float: right;
+	margin-right: 30px;
+	width: 120px;
+	height: 30px;
+	border: none;
+	color: white;
+	font-size: 15px;
+	background: rgb(45, 117, 96);
+	border-radius: 10px;
+	cursor: pointer;
+}

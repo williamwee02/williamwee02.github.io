@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="challenge.css">
+    <link rel="stylesheet" href="modal.css">
+    <title>Challenge Chapter 4 </title>
+</head>
+
+<body>
+    <!-- Title -->
+    <div class="intro">
+        <h1>Rock Paper and Scissors</h1>
+    </div>
+
+    <div class="title">
+        <div class="player">
+            <h2> PLAYER 1</h2>
+        </div>
+
+        <div class="computer">
+            <h2> COM </h2>
+        </div>
+    </div>
+
+    <!-- Games -->
+    <section class="games">
+        <!-- Player -->
+        <div class="playerOption">
+            <ul>
+                <li class="tooltip">
+                    <img src="/assets/rock.png" class="rock">
+                    <span class="tooltiptext">Rock</span>
+
+                </li>
+                <li class="tooltip">
+                    <img src="/assets/paper.png" class="paper">
+                    <span class="tooltiptext">Paper</span>
+                </li>
+                <li class="tooltip">
+                    <img src="/assets/scissor.png" class="scissor">
+                    <span class="tooltiptext">Scissor</span>
+                </li>
+            </ul>
+        </div>
+        </div>
+
+        <!-- Hasil Winner  -->
+        <div class="info">
+            <h2>VS</h2>
+        </div>
+
+        <!-- Computer -->
+        <div class="comOption">
+            <ul>
+                <li>
+                    <img src="/assets/rock.png" class="Crock">
+                </li>
+            </ul>
+        </div>
+        </div>
+
+    </section>
+
+    <!-- Refresh Page -->
+    <div id="reset">
+        <img src="/assets/refresh.png" class="refresh">
+    </div>
+
+
+    <div class="rules">
+        <button id="myBtn">How to Play</button>
+
+    </div>
+
+    <!-- Modal Content -->
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h3 style="text-align: center;padding-top: 0.5em;">Rules to Play</h3>
+            </div>
+            <div class="modal-body">
+                <p>1. You are the PLAYER 1 and will play with the computer, COM. </p>
+                <p>2. If your choice as same as COM, then you will have DRAW</p>
+                <br>
+                <p>You will WIN if you choose the below with the COM's choice.</p>
+                <p class="indent">a.Your choice is Rock, COM is Scissor</p>
+                <p class="indent">b.Your choice is Paper, COM is Rock</p>
+                <p class="indent">c.Your choice is Scissor, COM is Paper</p>
+                <br>
+                <p style="text-align: center;">Enjoy the Games</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="challenge.js"></script>
+    <script src="modal.js"></script>
+</body>
+
+</html>

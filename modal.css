@@ -1,0 +1,84 @@
+/* Modal Background */
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+
+/* Modal Content */
+.modal-content {
+	position: relative;
+	background-color: white;
+	margin: auto;
+	padding: 0;
+	border: 1px solid #888;
+	width: 80%;
+	animation-name: moveFromTop;
+	animation-duration: 0.8s;
+	border-radius: 10px 10px 0px 0px;
+}
+
+/* Animation */
+@-webkit-keyframes moveFromTop {
+	from {
+		top: -300px;
+		opacity: 0;
+	}
+	to {
+		top: 0;
+		opacity: 1;
+	}
+}
+
+@keyframes moveFromTop {
+	from {
+		top: -300px;
+		opacity: 0;
+	}
+	to {
+		top: 0;
+		opacity: 1;
+	}
+}
+
+/* Close Button */
+.close {
+	color: white;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.modal-header {
+	height: 40px;
+	padding: 2px 10px;
+	background-color: #f0b267;
+	color: white;
+    border-radius: 10px 10px 0px 0px;
+    
+}
+
+.modal-body {
+	color: rgb(129, 110, 110);
+	line-height: 1.25em;
+	height: 200px;
+	padding-left: 1em;
+	padding-top: 1em;
+}
+
+.indent {
+    padding-left: 25px;
+}
